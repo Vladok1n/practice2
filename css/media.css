@@ -1,0 +1,234 @@
+@media (max-width: 479px){
+    #menu{
+        display: none;
+    }
+    .main-block{
+        width: 90%;
+    }
+    nav{
+        grid-template-columns: 1fr 0fr;
+    }
+    .href-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 0 3%;
+    }
+    .a-container{
+        border-bottom: 10px gray;
+    }
+    ul li a{
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    .cipher-container{
+        width: 75%;
+    }
+    .cipher-container button{
+        padding: 5px 5px; 
+        width: 103px;
+        font-size: 1rem;
+    }
+    .cipher-container-main{
+        display: grid;
+        grid-template-areas: "input1 button1"
+        "input2 button2";
+    }
+    .key{
+        width: 96%;
+    }
+    .input1{
+        grid-area: input1;
+        width: 80%;
+    }
+    .input2{
+        grid-area: input2;
+        margin-top: 10px;
+        width: 80%;
+    }
+    .button1{
+        grid-area: button1;
+    }
+    .button2{
+        margin-top: 10px;
+        grid-area: button2;
+    }
+    #crossword-none{
+        display: block;
+    }
+    .clue-list{
+        display: none;
+    }
+    #crossword{
+        display: none;
+    }
+
+}
+@media (min-width: 480px) and (max-width:767px){
+    #menu{
+        display: none;
+    }
+    .main-block{
+        width: 90%;
+    }
+    nav{
+        grid-template-columns: 1fr 0fr;
+    }
+    .href-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 0 3%;
+    }
+    .a-container{
+        border-bottom: 10px gray;
+    }
+    ul li a{
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    .cipher-container{
+        width: 70%;
+    }
+
+    #crossword-none{
+        display: block;
+    }
+    .clue-list{
+        display: none;
+    }
+    #crossword{
+        display: none;
+    }
+    .cipher-container-main{
+        display: grid;
+        grid-template-areas: "input1 button1"
+        "input2 button2";
+    }
+    .key{
+        width: 50%;
+    }
+    .input1{
+        grid-area: input1;
+        width: 80%;
+    }
+    .input2{
+        grid-area: input2;
+        margin-top: 10px;
+        width: 80%;
+    }
+    .button1{
+        grid-area: button1;
+    }
+    .button2{
+        margin-top: 10px;
+        grid-area: button2;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px){
+    #menu-button{
+        display: none;
+    }
+    .main-block{
+        width: 90%;
+    }
+    nav{
+        grid-template-columns: 1fr 0fr;
+    }
+    .a-container{
+        display: grid;
+        border-bottom: 10px gray;
+        justify-content: center;
+        padding: 0;
+    }
+    ul li a{
+        width: 100%;
+    }
+    .cipher-container{
+        width: 60%;
+    }
+    .crossword-container-main{
+        width: 80vw;
+    }
+    .key{
+        width: 37%;
+    }
+    .cipher-container-main input{
+        width: 37%
+    }
+    .crossword-container-inner{
+        grid-template-areas: "crossword"
+        "clues";
+    }
+    .crossword-label{
+        font-size: 0.5em;
+    }
+    #crossword-none{
+        display: none;
+    }
+}
+@media (min-width: 1024px) and (max-width:1279px){
+    nav{
+        width: 100%;
+        display: grid;
+        background: rgb(245, 245, 245);
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .href-container{
+        padding-left: 20px;
+    }
+    #menu-button{
+        display: none;
+    }
+    .crossword-container-inner{
+        grid-template-areas: "crossword"
+        "clues";
+    }
+    .key{
+        width: 37%;
+    }
+    .cipher-container-main input{
+        width: 37%
+    }
+    .clue-number{
+        width: 25px;
+    }
+    .crossword-label{
+        font-size: 0.5em;
+    }
+    #crossword-none{
+        display: none;
+    }
+}
+@media (min-width:1280px){
+    #menu-button{
+        display: none;
+    }
+    nav{
+        grid-template-columns: 1fr 1fr;
+    }
+    .href-container{
+        padding-left: 25px;
+    }
+    #crossword-none{
+        display: none;
+    }
+    .key{
+        width: 40%;
+    }
+    .cipher-container-main input{
+        width: 40%
+    }
+    .crossword-container-inner{
+        grid-template-areas: "crossword"
+        "clues";
+    }
+    table{
+        min-width: 600px;
+    }
+    .clue-list{
+        min-width: 300px;
+    }
+    table tr td{
+        width: 35px;
+        height: 35px;
+    }
+}

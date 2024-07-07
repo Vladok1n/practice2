@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Фиджитал-футбол</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/crossword.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header>
+        <button id="menu-button">Меню</button>
+        <nav id="menu">
+            <ul class="href-container">
+                <li class="a-container"><a class="nav-link" href="index.html">Главная страница</a></li>
+                <li class="a-container"><a class="nav-link" href="about.html">О шифровании</a></li>
+                <li class="a-container"><a class="nav-link" href="examples.html">Примеры шифров</a></li>
+                <li class="a-container"><a class="fake-link">Кроссворд</a></li>
+            </ul> 
+            <div></div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="cipher-container crossword-container-main">
+            <div class="cipher-container-inner crossword-container-inner">
+                <div id="crossword-none">
+                    <h2>Чтобы решить кроссворд зайдите с ПК</h2>
+                </div>
+                <div id="crossword">
+
+                </div>
+                <div class="clue-list">
+                    <div class="btn-cont grid-item">
+                        <button class = "cross-btn" onclick="checkAnswer()">Проверить решение</button>
+                        <button class = "cross-btn" onclick="showAnswer()">Посмотреть ответы</button>
+                    </div>
+                    <div class="clues grid-item">
+                        <div class = "horizont grid-item">
+                            <h3>Горизонтальные</h3>
+                            <ol id="horizontal-clues"></ol>
+                        </div>
+                        <div class="vertic grid-item">
+                            <h3>Вертикальные</h3>
+                            <ol id="vertical-clues"></ol>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="https://www.flaticon.com/ru/free-icons/" title="замок иконки">Использованы изображения с Flaticon</a>
+    </footer>
+    <script src = "js/scriptCrossword.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры шифрования</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header>
+        <button id="menu-button">Меню</button>
+        <nav id="menu">
+            <ul class="href-container">
+                <li class="a-container"><a class="nav-link" href="index.html">Главная страница</a></li>
+                <li class="a-container"><a class="nav-link" href="about.html">О шифровании</a></li>
+                <li class="a-container"><a class="fake-link">Примеры шифров</a></li>
+                <li class="a-container"><a class="nav-link" href="crossword.html">Кроссворд</a></li>
+            </ul> 
+            <div></div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="cipher-container">
+            <div class="cipher-container-inner">
+                <h2>Шифр Цезаря</h2>
+                <p class="keyCaption">Введите ключ:</p>
+                <input class="key" type="number" min="0", max="33" id="textBoxCaesarKey" placeholder="Ключ">
+            </div>
+            <div class="cipher-container-inner cipher-container-main">
+                <input class = "message input1" type = "text" id="textBoxCaesarInput" placeholder="Сообщение">
+                <button class="cipher-button button1" onclick="doCaesarCipher('textBoxCaesar')" title="Зашифровать"><img src="assets/icon-closed-lock.png"></button>
+                <button class="cipher-button button2" onclick="undoCaesarCipher('textBoxCaesar')" title="Расшифровать"><img src="assets/icon-opened-lock.png"></button>
+                <input class = "message input2" type = "text" id="textBoxCaesarOutput" placeholder="Шифровка">
+            </div>
+        </div>
+        <div class="cipher-container">
+            <div class="cipher-container-inner">
+                <h2>Шифр Виженера</h2>
+                <p class="keyCaption">Введите ключ:</p>
+                <input class = "key" type = "text" id="textBoxVigenereKey" placeholder="Ключ">
+            </div>
+            <div class="cipher-container-inner cipher-container-main">
+                <input class = "message input1" type = "text" id="textBoxVigenereInput" placeholder="Сообщение">
+                <button class="cipher-button button1" onclick="doVigenereCipher('textBoxVigenere')"><img src="assets/icon-closed-lock.png"></button>
+                <button class="cipher-button button2" onclick="undoVigenereCipher('textBoxVigenere')"><img src="assets/icon-opened-lock.png"></button>
+                <input class = "message input2" type = "text" id="textBoxVigenereOutput" placeholder="Шифровка">
+            </div>
+        </div>
+        <div class="cipher-container">
+            <div class="cipher-container-inner">
+                <h2>Шифр XOR</h2>
+                <p class="keyCaption">Введите ключ:</p>
+                <input class = "key" type = "text" id="textBoxXorKey" placeholder="Ключ">
+            </div>
+            <div class="cipher-container-inner cipher-container-main">
+                <input class="message input1" type="text" id="textBoxXorInput" placeholder="Сообщение">
+                <button class="cipher-button button1" onclick="doXorCipher('textBoxXor')" title="Зашифровать"><img src="assets/icon-closed-lock.png"></button>
+                <button class="cipher-button button2" onclick="undoXorCipher('textBoxXor')" title="Расшифровать"><img src="assets/icon-opened-lock.png"></button>
+                <input class="message input2" type="text" id="textBoxXorOutput" placeholder="Шифровка">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="https://www.flaticon.com/ru/free-icons/" title="замок иконки">Использованы изображения с Flaticon</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

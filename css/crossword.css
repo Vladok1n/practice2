@@ -1,0 +1,93 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    border: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+td > label{
+    color: black;
+}
+input{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid grey !important;
+    color: black !important;
+}
+.clue-list{
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 10px;
+}
+.clues{
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: left;
+}
+.horizont, .vertic{
+    margin: 10px 0;
+}
+.grid-item-cr{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+}
+.btn-cont{
+    grid-gap: 1rem;
+}
+.crossword-container-main{
+    width: 90%;
+}
+.crossword-container-inner{
+    display: grid;
+    grid-template-areas: "crossword clues";
+    padding: 0;
+    margin: 0;
+}
+#crossword{
+    grid-area: crossword;
+}
+.clue-list{
+    grid-area: clues;
+}
+.clue-list li{
+   list-style-type: none;
+   padding: 3px 0;
+}
+#crossword{
+    display: flex;
+    justify-content: center;
+}
+.clue-list li:before{
+    list-style-type: none;
+ }
+.clue-container{
+    display: flex;
+    align-items: center;    
+}
+.clue-container div{
+    display: table-cell;
+}
+.clue-number{
+    vertical-align: top;
+    min-width: 30px;
+}
+table {
+    table-layout: fixed;
+}
+.crossword-label{
+    font-size: 0.6em;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    pointer-events: none;
+}
+ul li a{
+    font-size: 14px;
+}
